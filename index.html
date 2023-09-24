@@ -7,6 +7,29 @@
     <title>Sign Up</title>
 </head>
 <body>
-    <h1>Sign Up Form</h1>
+    <div class="container">
+        <img src="image/login-img.svg">
+        <div class="content">
+            <h1>Cadastre-se!</h1>
+            <p>É de graça e leva apenas um minuto.</p>
+            <form>
+                <label for="fname">Primeiro Nome</label>
+                <input type="text" id="fname" required>
+                <label for="lname">Último Nome</label>
+                <input type="text" id="lname" required>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" required>
+                <label for="pword">Senha</label>
+                <input type="password" id="pword" minlength="6" maxlength="12" required>
+                <label for="cpword">Confirmar Senha</label>
+                <input type="password" id="cpword" minlength="6" maxlength="12" required>
+                <input type="submit" value="Cadastrar">
+            </form>
+            <p>Ao clicar em "Cadastrar", você estará concordando com nossos <a href="#">Termos de Uso</a> e <a href="#">Política de Privacidade</a></p>
+            <div class="login-link">
+                <p>Já tem uma conta? Clique <a href="#">aqui</a> para fazer login.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
