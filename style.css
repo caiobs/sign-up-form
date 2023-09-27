@@ -14,17 +14,12 @@
     font-family: 'Popins', sans-serif;
 } 
 
-body {
-border-color: var(--color-default);
-}
-
 .container {
     background: linear-gradient(45deg, var(--color-one), var(--color-three)) no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    width: auto;
 }
 
 img {
@@ -40,23 +35,53 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--color-two);
+    border: 2px solid var(--color-two);
     border-radius: 15px;
     box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.32);
-    height: 50vh;
+    height: auto;
     width: 30vw;
     padding: 2rem;
+    font-size: 0.7rem;
+}
+
+.content h1 {
+    text-transform: uppercase;
+    margin-bottom: 0.1rem;
+}
+
+.content p {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.content p a {
+    text-decoration: none;
+    color: var(--color-default);
+}
+
+.content .link-bttn {
+    font-size: 0.9rem;
 }
 
 form label {
-    margin-top: 0.6rem;
-    display: flex;
+    margin: 0.4rem 0;
 }
 
 form input {
+    color: var(--color-one);
     width: 100%;
     padding: 0.4rem;
+    margin: 0.7rem 0;
     border: none;
     border-radius: 7px;
     outline: none;
+}
+
+form input[type=submit] {
+    cursor: pointer;
+    width: 103%;
+}
+
+form input[type=submit]:hover {
+    background-color: var(--color-two);
 }
