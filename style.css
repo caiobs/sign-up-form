@@ -21,6 +21,42 @@ border-color: var(--color-default);
 .container {
     background: linear-gradient(45deg, var(--color-one), var(--color-three)) no-repeat;
     display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     width: auto;
+}
+
+img {
+    height: 50vh;
+    width: 30vw;
+    padding: 2rem;
+}
+
+.content {
+    color: var(--color-two);
+    background-color: var(--color-three);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-two);
+    border-radius: 15px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.32);
+    height: 50vh;
+    width: 30vw;
+    padding: 2rem;
+}
+
+form label {
+    margin-top: 0.6rem;
+    display: flex;
+}
+
+form input {
+    width: 100%;
+    padding: 0.4rem;
+    border: none;
+    border-radius: 7px;
+    outline: none;
 }
