@@ -85,3 +85,13 @@ form input[type=submit] {
 form input[type=submit]:hover {
     background-color: var(--color-two);
 }
+
+@media screen and (max-width: 768px) {
+    img {
+        display: none;
+    }
+
+    .content {
+        width: 50vw;
+    }
+}
